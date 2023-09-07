@@ -1,0 +1,123 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./media2/logo-for-LLHQ-removebg-preview.png" />
+    <link rel="stylesheet" href="./contact-us.css" />
+    <script
+      defer
+      src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+    ></script>
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script defer src="./index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Get in Touch with Us</h1>
+      <p>
+        Collaboration is a two-way street. Collaborators can also benefit from
+        the knowledge and expertise shared on our website. By participating in
+        joint projects, contributors can learn from each other, exchange ideas,
+        and collectively contribute gain profits by having a bigger audience.
+      </p>
+      <section id="return">
+        <a href="../LandingPage/index.html">
+          &larr;
+        </a>
+      </section>
+    </header>
+    <main>
+      <div id="error" >
+        successful
+      </div>
+      <div class="info-flex-container">
+        <form id="form" ">
+          <div class="user-email">
+            <div class="user">
+              <input
+                id="username"
+                type="text"
+                name="username"
+                placeholder="Enter your full name"
+                required
+                autofocus
+                autocomplete="none"
+              />
+            </div>
+            <div class="email">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+                autocomplete="none"
+              />
+            </div>
+          </div>
+
+          <div class="radio-section">
+            <h1 id="question-for-contact">
+              What type of business would you like to contact me for?
+            </h1>
+            <div id="isGiveStress">
+              <input
+                type="radio"
+                name="main-radio-input"
+                id="Collaboration"
+                value="Collaboration"
+              />
+              <label for="Collaboration">Collaboration</label>
+
+              <input
+                type="radio"
+                name="main-radio-input"
+                id="Did-you-find-bugs"
+                value="Did-you-find-bugs"
+              />
+              <label for="Did-you-find-bugs">Did you find bugs</label>
+
+              <input
+                type="radio"
+                name="main-radio-input"
+                id="other"
+                value="other"
+              />
+              <label for="other">Other</label>
+
+              <input
+                type="radio"
+                name="main-radio-input"
+                id="cancel"
+                value="yessir"
+              />
+              <label for="cancel">Cancel</label>
+            </div>
+          </div>
+          <div class="messageFor-form">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Write here for more information"
+            ></textarea>
+          </div>
+
+          <div class="submit-form-btn">
+            <button type="submit"  id="submit-btn"onclick="sendEmail()">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+      <div class="message-flex-container"></div>
+    </main>
+  </body>
+</html>

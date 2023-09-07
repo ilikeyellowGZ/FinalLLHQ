@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="start-text">
+        <h3>
+          1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa rem
+          nulla <br />
+          <br />
+          2. inventore perspiciatis facere sunt voluptatum ducimus aliquid id
+          atque. <br />
+          <br />
+          3. Ducimus doloribus mollitia eveniet id voluptates impedit ipsa,
+          <br />
+          <br />
+          4. doloremque sequi aliquam omnis adipisci minus nobis autem, ipsam
+          totam <br />
+          <br />
+          5. ex! Veniam incidunt facere soluta alias deserunt adipisci quod quia
+          <br />
+          <br />
+          6. repudiandae sunt!
+        </h3>
+      </div>
+      <div id="question-container" class="hide">
+        <div id="questionsBox">
+          
+          <div id="question">Question</div>
+        </div>
+        <div class="asnwerContainer">
+          <div id="answer-buttons" class="btn-grid">
+            <button id="answersHere" class="btn">Answer 1</button>
+            <button id="answersHere" class="btn">Answer 2</button>
+            <button id="answersHere" class="btn">Answer 3</button>
+            <button id="answersHere" class="btn">Answer 4</button>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn button-cover">
+          <span class="text-box">Start</span>
+          <span>maybe</span>
+        </button>
+        <button id="next-btn" class="next-btn hide">Next</button>
+      </div>
+    </div>
+    <div id="timerContainer" class="hide">
+      <div class="timeWrapper">
+        <div class="timerLeft">Time left: &nbsp</div>
+        <strong></strong><span id="time">25:0</span></strong>
+      </div>
+    </div>
+    <!-- edit and finally finish this page with the animtions and transitions from up
+    and down then the watch the videos of sesssion handling and theeen add the.
+    email function. cause you finished the timer, double clicking scoring, you
+    just have the questions the problems and the top. -->
+  </body>
+  <script src="timer.js"></script>
+  <script src="question.js"></script>
+</html>

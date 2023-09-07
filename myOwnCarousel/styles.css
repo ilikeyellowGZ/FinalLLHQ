@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&family=Varela&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+      --main-color: #4d4dff;
+      --secondary-color: #ff00ff;
+      --tertary-color: #fff44f;
+      --background-color: #121212 ;
+      --text-color: #f8e3e3;
+      --second-text-color: #fff ;
+      --main-heading-font: 'Poppins', sans-serif;
+      --main-para-text:: 'Varela', sans-serif;
+  }
+
+ 
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    
+    border: 1px solid red;
+    height: 100%;
+    position: relative;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+
+.swiper .swiper-button-prev ,.swiper .swiper-button-next   {
+    color: var(--background-color);
+    width: 45px;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.151);
+    transition: all 0.3s ease-in-out;
+}
+.swiper .swiper-button-prev:hover ,.swiper .swiper-button-next:hover   {
+    color: var(--background-color);
+    width: 45px;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.01);
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+   padding: 24px 8px;
+}
+
+.swiper .swiper-pagination-bullet .swiper-pagination-bullet-active{
+    color: var(--background-color);
+    background: var(--background-color);
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    color: var(--background-color);
+    background: var(--background-color);
+}
+
+.motorcycle {
+    background: url(../imgForCaro/background\(1\)\ \(2\).png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 0% 100%;
+    background-repeat: repeat-x no-repeat;
+    overflow: hidden;
+}
+.vehicle {
+    background: url(../imgForCaro/background\(2\)\ \(1\)\ \(2\).png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 0% 100%;
+    background-repeat: repeat-x no-repeat;
+    overflow: hidden;
+}
+
+.heavyVehicle {
+    background:url(../imgForCaro/background\(3\)\ \(1\)\ \(2\).png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 0% 100%;
+    background-repeat: repeat-x no-repeat;
+overflow: hidden;
+}
+
+.random {
+    background: url(../imgForCaro/background\(4\)\ \(1\).png);
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: repeat-x no-repeat;
+}
+
+.heavyVehicle img , .motorcycle img , .vehicle img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -50px;
+    bottom: 16px;
+}
+
+.swiper-slide-active img {
+    animation: carDrive 8s linear  infinite;
+}
+
+
+.informationContainer {
+    width: 500px;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    border-radius: 24px ;
+    padding: 16px 16px;
+    background: #ffffffb9;
+}
+
+.swiper-slide-active .container-motorcycle{
+    animation: roll-in-bottom 0.6s ease-out both;
+}
+.swiper-slide-active .container-lightmotor{
+    animation: bounce-in-top 1.1s both;
+}
+.swiper-slide-active .container-heavymotor{
+    animation: slide-in-elliptic-right-fwd 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) .2s both;
+}
+
+.informationContainer  h1 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: var(--main-heading-font);
+    font-weight: 800;
+    color: #121212;
+}
+.informationContainer  p {
+    font-family: 'Varela', sans-serif;;
+    color: #121212;
+    margin: 8px 0;
+}
+
+/* -----buttons */
+.mainButtons {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    perspective: 100px;
+    height: 90px;
+    width: 320px;
+}
+a {
+    text-decoration: none;
+    position: relative;
+    width: 10%;
+    height: 100%;
+}
+
+
+.btn {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 8px ;
+    position: relative;
+    background:  #3e3e3e ;
+    font-family:  var(--main-heading-font);
+    font-size: 24px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: .4s;
+    overflow: hidden;
+    border-right: 1px solid #616161;
+    border-top: 1px solid #616161;
+     /*z-index: ; ima leave this z index nonsense to remind niggas that these thing right here skafs problems */
+    cursor: pointer;
+    transform: rotateY(15deg) rotateX(40deg) rotateZ(-31deg);
+    box-shadow: -1px 1px #ffa500 , -2px 2px #ffa500, -3px 3px #ffa500, -4px 4px #ffa500, -5px 5px #ffa500, -6px 6px #ffa500, -7px 7px #ffa500, -8px 8px #ffa500;   
+}
+/*  add new code cause the old thing i wanted was out dated */
+
+.swiper-slide-active .mainButtons .btn{
+   animation: gatekeep 4s linear  4s 1  ;
+}
+
+.btn:hover {
+    color:var(--background-color) ;
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) !important;
+    box-shadow:none !important;
+    text-shadow: 2px 2px 50px var(--main-color);
+  }
+  span {
+    transition: all 0.7s;
+    z-index: -1;
+  }
+  
+  button .first {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: #ffa500;
+  }
+  
+  button:hover .first {
+    top: 0;
+    right: 0;
+  }
+  button .second {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: -100%;
+    height: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+  
+  button:hover .second {
+    top: 0;
+    left: 50%;
+  }
+  
+  button .third {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    top: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+  
+  button:hover .third {
+    top: 0;
+    left: 25%;
+  }
+  
+  button .fourth {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+  
+  button:hover .fourth {
+    top: 0;
+    left: 0;
+  }
+  
+
+
+
+
+ 
+@keyframes gatekeep {
+    
+    50%{
+      transform: translateY(0px) rotateY(15deg) rotateX(40deg) rotateZ(-31deg);
+    }
+
+    
+    70%,84%{
+    transform: translateY(-220px) rotateY(15deg) rotateX(40deg) rotateZ(-31deg);
+    ;
+        box-shadow: none 
+    }
+    90%,70%, 60%{
+      box-shadow: -1px 1px black, -2px 2px black, -3px 3px black, -4px 4px #ffa500,
+        -5px 5px #ffa500, -6px 6px #ffa500, -7px 7px black, -8px 8px black,-9px 9px black, 
+        -10px 10px #ffa500, -11px 11px #ffa500, -12px 12px #ffa500,/*  -23px 23px #ffa500, -22px 22px #ffa500, -21px 21px black, */
+        -13px 13px black, -14px 14px black, -15px 15px black, -16px 16px #ffa500,-17px 17px #ffa500, 
+        -18px 18px #ffa500, -19px 19px black, -20px 20px black
+    }
+   
+    100%, 0%{
+      transform: translateY(0px) rotateY(15deg) rotateX(40deg) rotateZ(-31deg);
+        ; 
+        
+    }
+}
+@keyframes carDrive {
+    0% {
+        transform: translateX(0);
+    }
+    
+    60%{
+      transform: translateX(-60vw);
+    }85% {
+      transform: translateX(-60vw);
+  }
+        100% {
+        transform: translateX(-110vw);
+    }
+}
+
+@keyframes roll-in-bottom {
+    0% {
+      -webkit-transform: translateY(200px) rotate(540deg);
+              transform: translateY(200px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+              transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+ 
+
+@-webkit-keyframes slide-in-elliptic-right-fwd {
+    0% {
+      -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
+              transform: translateX(800px) rotateY(-30deg) scale(0);
+      -webkit-transform-origin: -100% 50%;
+              transform-origin: -100% 50%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotateY(0) scale(1);
+              transform: translateX(0) rotateY(0) scale(1);
+      -webkit-transform-origin: -1800px 50%;
+              transform-origin: -1800px 50%;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-right-fwd {
+    0% {
+      -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
+              transform: translateX(800px) rotateY(-30deg) scale(0);
+      -webkit-transform-origin: -100% 50%;
+              transform-origin: -100% 50%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotateY(0) scale(1);
+              transform: translateX(0) rotateY(0) scale(1);
+      -webkit-transform-origin: -1800px 50%;
+              transform-origin: -1800px 50%;
+      opacity: 1;
+    }
+  }
+  
