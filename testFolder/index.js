@@ -15,6 +15,7 @@ startButton.addEventListener("click", startGame, () => {});
 /* sessionStorage.setItem("questionaire", `${questions.in}`); */
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
+  console.log(shuffledQuestions);
 
   setNextQuestion();
 });
@@ -35,6 +36,14 @@ function setNextQuestion() {
   resetState();
 
   showQuestion(shuffledQuestions[currentQuestionIndex]);
+  const imgElement = document.createElement("img");
+
+  if (shuffledQuestions[currentQuestionIndex].hasImg === true) {
+    imgElement.src = question.imgElement;
+    questionContainer.appendChild(imgElement);
+  } else {
+    questionContainer.removeChild(imgElement);
+  }
 }
 
 function showQuestion(question) {

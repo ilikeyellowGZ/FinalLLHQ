@@ -4,6 +4,7 @@ const questions = [
   {
     question: "What is 2 + 2?",
     imgElement: "../media/Untitled.png",
+    hasImg: false,
     answers: [
       { text: "4", correct: true },
       { text: "22", correct: false },
@@ -12,6 +13,7 @@ const questions = [
   {
     question: "how big is yout glizzy",
     imgElement: "../media/Untitled.png",
+    hasImg: true,
     answers: [
       { text: "small (sigh)", correct: true },
       { text: "microphobia type", correct: true },
@@ -22,6 +24,7 @@ const questions = [
   {
     question: "do you like men?",
     imgElement: "../media/Untitled.png",
+    hasImg: false,
     answers: [
       { text: "Kinda", correct: false },
       { text: "YES!!!", correct: true },
@@ -34,6 +37,7 @@ const questions = [
     question:
       "The ____ warns other road users of your intentions to steer to the right or the left, or to turn to the right or left.",
     imgElement: "../media/Untitled.png",
+    hasImg: false,
     answers: [
       { text: "5", correct: true },
       { text: "7", correct: false },
@@ -43,8 +47,4 @@ const questions = [
   },
 ];
 
-questions.forEach((question) => {
-  const imgElement = document.createElement("img");
-  imgElement.src = question.imgElement;
-  questionContainer.appendChild(imgElement);
-});
+questions.forEach((question) => {});
