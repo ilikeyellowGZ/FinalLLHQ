@@ -13,6 +13,7 @@
     --second-text-color: #fff ;
     --main-heaing-font: font-family: 'Poppins', sans-serif;
     --main-para-text:font-family: 'Varela', sans-serif;
+    --font-size-desktop-H: 54px 
 }
 
 
@@ -42,7 +43,7 @@ nav h1 {
     font-family: 'Poppins', sans-serif; 
     text-transform: uppercase;
     color: var(--second-text-color);
-    font-size: 110px;
+    font-size: var(--font-size-desktop-H)
 }
 
 nav ul a li{
