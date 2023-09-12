@@ -38,11 +38,21 @@ function setNextQuestion() {
   showQuestion(shuffledQuestions[currentQuestionIndex]);
   const imgElement = document.createElement("img");
 
-  if (shuffledQuestions[currentQuestionIndex].hasImg === true) {
+  const min = 1;
+
+  if (
+    shuffledQuestions[currentQuestionIndex].hasImg &&
+    questionContainer.childElementCount === min
+  ) {
     imgElement.src = question.imgElement;
     questionContainer.appendChild(imgElement);
-  } else {
-    questionContainer.removeChild(imgElement);
+  } else if (!shuffledQuestions[currentQuestionIndex].hasImg) {
+    //Added variable and set it to the img.
+    const existingImgElement = questionContainer.querySelector("img");
+    //Removes the image if it has one.
+    if (existingImgElement) {
+      questionContainer.removeChild(existingImgElement);
+    }
   }
 }
 
@@ -129,6 +139,7 @@ function updateCOuntdown() {
   time.innerHTML = `${minutes}:${seconds}`;
 
   timer--;
+
   if (timer < 600) {
     time.style.color = "#ffa500";
     time.classList.add("almostFinished");
@@ -145,7 +156,6 @@ function updateCOuntdown() {
     sendEmail();
     // you  can put the email function in this funtion right here.
   }
-
   // the day after installing this feature, it started randomly working like wtf but aii this is coding for gang!!!!!!
 }
 
