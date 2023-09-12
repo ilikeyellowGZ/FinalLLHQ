@@ -13,7 +13,8 @@
     --second-text-color: #fff ;
     --main-heaing-font: font-family: 'Poppins', sans-serif;
     --main-para-text:font-family: 'Varela', sans-serif;
-    --font-size-desktop-H: 54px 
+    --font-size-desktop-H: 50px;
+    --font-size-desktop-p: 18px;
 }
 
 
@@ -43,7 +44,7 @@ nav h1 {
     font-family: 'Poppins', sans-serif; 
     text-transform: uppercase;
     color: var(--second-text-color);
-    font-size: var(--font-size-desktop-H)
+    font-size: 104px
 }
 
 nav ul a li{
@@ -56,7 +57,7 @@ nav ul a li{
     padding: 0;
     transition: all 0.4s ;
     padding: 8px 28px;
-    font-size: 100px;
+    font-size:var(--font-size-desktop-H)
     
     
 }
