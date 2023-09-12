@@ -31,34 +31,6 @@ body {
 
 
 
-nav {
-    background: var(--main-color);
-    width: 500px;
-    border-radius: 50px 0% 0% 50px;
-    height: 90px;
-    position: absolute;
-    right: 0;
-    top: 10px;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    box-shadow: 1px 1px 40px #4d4dffa1 ,
-    -1px -1px 40px #ff00ffa1;
-    
-}
-
-nav img {
-    height: 100px;
-    width: 100px;
-}
-
-nav h1 {
-    font-size: 32px;
-    color: var(--second-text-color);
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 1px 1px 40px #000;
-}
-
 main {
     height: 100%;
     width: 100%;
@@ -69,31 +41,31 @@ main {
     position: absolute;
     background: #00000054;
     z-index: 3;
-    width: 40%;
+    width: min(44% , 60%);
     height: 40%;
     box-shadow: 1px 1px 40px #ffffff28 ,
     -1px -1px 40px #ffffff28;
     top: 10%;
     left: 10%;
-    padding: 40px;
+    padding: 40px 0px 40px 40px ;
 }
 
 .flex-wrapper h1 {
-    font-size: 48px;
+    font-size: 2.5rem;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
 
 .flex-wrapper h5 {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--secondary-color);
     font-family: 'Varela', sans-serif;
-    margin: 3px 0;   
+    margin: 5px 0;   
 }
 .flex-wrapper p {
     color: #fff;
     font-family: 'Varela', sans-serif;
-    font-size: 20px;
+    font-size: 1.3rem;
     margin: 0px 0 40px;
     line-height: 16px;
 }
