@@ -42,7 +42,7 @@ main {
     background: #00000054;
     z-index: 3;
     width: min(44% , 60%);
-    height: 40%;
+    height: 45%;
     box-shadow: 1px 1px 40px #ffffff28 ,
     -1px -1px 40px #ffffff28;
     top: 10%;
