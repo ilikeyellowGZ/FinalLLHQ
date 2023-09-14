@@ -114,6 +114,7 @@ body.wrong {
     height: 100%;
     display: grid;
     align-items: center;
+    
 }
 #question {
     text-align: center;
@@ -253,12 +254,6 @@ animation: rainbow 20s linear 1s infinite ;
     animation: timerIsFinishing 1s linear  infinite ;
 }
 
-@media (max-width:1288px) {
-    #start-text
-    {
-        overflow: scroll;
-    }
-}
 
 
 @keyframes timerIsFinishing {
@@ -319,6 +314,93 @@ animation: rainbow 20s linear 1s infinite ;
     height: 14px;
     line-height: 13px;
   }
+  @media (max-width:1440px) and (min-width:1024px)  {
+    #start-text h3 {
+        font-size: 20px;
+    }
+    #container {
+        border-radius: 8px;
+        width: 75%;
+        height: 75%;
+        max-height: 75%;
+        padding: 20px 22px ;
+        position: relative;
+        background: #0e0e0e ;
+    }
+    #start-text{
+        position: absolute;
+        text-align: start;
+        display: flex;
+        height: 105%;
+        max-height: 75%;
+        width: 100%;
+        align-items: center;
+        font-weight: 400;
+        font-size: 17px;
+        top: 55%;
+        transform: translateY(-50%);
+        padding: 0 12px; 
+        overflow: hidden;
+    }
+  }
+  @media (max-width:500px) and (min-width:320px)  {
+    #start-text h3 {
+        font-size: 13px;
+    }
+    #container {
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        padding: 20px 0px ;
+        position: relative;
+        background: #0e0e0e ;
+    }
+    #start-text{
+        position: absolute;
+        text-align: start;
+        display: flex;
+        height: 105%;
+        max-height: 75%;
+        width: 100%;
+        align-items: center;
+        font-weight: 400;
+        top: 55%;
+        transform: translateY(-50%);
+        padding: 0 12px; 
+        overflow: hidden;
+    }
+    .asnwerContainer{
+        max-height:100% ;
+        height: 60%;
+        margin-top: 16px;
+        margin-inline:auto;
+        padding: 16px 0px;
+    }
+    #answer-buttons {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+    }
+    .btn {
+        width: 400px;
+        height: 80%;
+        grid-gap: 4px 0;
+        outline: var(--main-color);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        background: none;
+        border: #f8e3e3 1px solid;
+        color: #f8e3e3;
+        font-family: var(--main-heaing-font);
+        font-weight: 900;
+        font-size: 17px;
+    }
+    
+  }
   
   .button-cover:after {
     content: "";
@@ -344,6 +426,12 @@ animation: rainbow 20s linear 1s infinite ;
     opacity: 1;
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
   }
+
+
+    .hide {
+        display: none; 
+    }
+
 @keyframes rainbow {
     100% , 0% {
         border: 4px double red;
@@ -376,7 +464,3 @@ animation: rainbow 20s linear 1s infinite ;
         border: 4px double rgb(255, 105, 130);
     }
 }
-
-    .hide {
-        display: none; 
-    }
