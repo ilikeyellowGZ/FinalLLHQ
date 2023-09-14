@@ -1028,7 +1028,7 @@ a {
     }
 
 } */
-@media (max-width:479px) and (min-width:374px) {
+@media (max-width:479px) and (min-width:320px) {
     nav h1 {
         font-size: 52px;
         text-align: center;

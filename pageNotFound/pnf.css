@@ -18,7 +18,6 @@
 
 html,
 body {
-    background: var(--background-color);
     width: 100vw;
     height: 100%;
     scroll-behavior: smooth;
@@ -145,7 +144,7 @@ span svg {
     width: 60px;
     position: relative;
     top: 25px;
-    left: 25px;
+    left: 0px;
     animation: rotating-gear 5s linear infinite ;
 }
 
@@ -172,50 +171,6 @@ span svg {
     z-index: 1;
 }
 
-.one::before{
-    top: 10% ;
-    left: 20%;
-    z-index: 1;
-}
-.two::before{
-    top: 43% ;
-    left: 20%;
-    z-index: 1;
-}
-.three::before{
-    top: 80% ;
-    left: 20%;
-    z-index: 1;
-}
-.four::before{
-    top: 10% ;
-    left: 53.4%;
-    z-index: 1;
-}
-.five::before{
-    top: 43% ;
-    left: 53.4%;
-    z-index: 1;
-}
-.six::before{
-    top: 80% ;
-    left: 53.4%;
-    z-index: 1;
-}
-.seven::before{
-    top: 10% ;
-    left: 80%;
-    z-index: 1;
-}.eight::before{
-    top: 42% ;
-    left: 80%;
-    z-index: 1;
-}
-.nine::before{
-    top: 80% ;
-    left: 80%;
-    z-index: 1;
-}
 
 @keyframes right-left {
     0%{
@@ -256,7 +211,7 @@ span svg {
 }
 
 
-@media (min-width:1040px) and (max-width: 1310px) {
+@media (min-width:1024px) and (max-width: 1440px) {
     .signs {
         position: absolute;
         bottom: 5%;
@@ -270,22 +225,21 @@ span svg {
     } 
     .flex-wrapper{
         position: absolute;
-        background: #000;
+        background: #00000054;
         z-index: 3;
-        width: 40%;
-        height: 45%;
+        width: 600px;
+        height: 300px;
         box-shadow: 1px 1px 40px #ffffff50 ,
         -1px -1px 40px #ffffff3d;
         top: 10%;
         left: 10%;
         padding: 20px 40px;
-        border-radius: 50px;
         z-index: 9;
     }
     .flex-wrapper p {
         color: #fff;
         font-family: 'Varela', sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         margin: 0px 0 40px;
         line-height: 16px;
     }
@@ -294,7 +248,7 @@ span svg {
         height: 30px;
         width: 30px;
         position: relative;
-        top: 25px;
+        top: 10px;
         left: 25px;
         animation: rotating-gear 20s infinite ;
     }
@@ -310,9 +264,10 @@ span svg {
         border: none;
         z-index: 4;
         cursor: pointer;
-        width: 100%;
+        width: 30%;
+        bottom: 10%;
         font-size: 32px;
-        position: relative;
+        position: absolute;
         background: linear-gradient(90deg, var(--main-color) 10% , var(--secondary-color) 100%);
     }
     .signs {
@@ -326,7 +281,7 @@ span svg {
     }
 }
 
-@media (max-width:1039px) and (min-width: 820px) {
+/* @media (max-width:1039px) and (min-width: 820px) {
     nav {
         background: var(--main-color);
         width: 110px;
@@ -412,7 +367,7 @@ span svg {
         animation: right-left 30s infinite;
         transform:scale(0.6)
     }
-}
+} */
 @media (max-width:820px) and (min-width: 500px) {
     nav {
         background: var(--main-color);
@@ -431,7 +386,10 @@ span svg {
     }
     html,
     body {
-        overflow:hidden
+        overflow:hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     nav img {
@@ -457,7 +415,6 @@ span svg {
         top: 10%;
         left: 10%;
         padding: 40px;
-        border-radius: 50px;
         z-index: 9;
     
     }
@@ -508,21 +465,21 @@ span svg {
     }
 }
 
-@media (max-width:500px) and (min-width: 200px) {
+@media (max-width:450px) and (min-width: 320px) {
     html,
     body {
         overflow:hidden;
         padding: 0;
         margin: 0;
-        background: #000;
+        
     }
     .flex-wrapper{
-        background: #000000;
+        background: none;
         z-index: 3;
         width: 100%;
-        height: 100%;
-        box-shadow: 1px 1px 40px #ffffff50 ,
-        -1px -1px 40px #ffffff3d;
+        height: 800px;
+        box-shadow: 1px 1px 0px #ffffff00 ,
+        -1px -1px 0px #ffffff05;
         top: 14%;
         left: 10%;
         padding: 24px;
@@ -530,7 +487,6 @@ span svg {
         z-index: 9;
         position: relative;
         left: 0;
-    
     }
     nav {
         background: var(--main-color);
@@ -570,8 +526,10 @@ span svg {
         color: var(--tertary-color);
         font-family: 'Varela', sans-serif;
         margin: 3px 0;   
+        line-height: 0%;
         text-align: center;
     }
+    
     button {
         color: var(--tertary-color);
         font-family: 'Poppins', sans-serif;
@@ -588,7 +546,7 @@ span svg {
         font-size: 32px;
         position: absolute;
         top: 0%;
-        background: linear-gradient(90deg, var(--main-color) 10% , var(--secondary-color) 100%);
+        background: var(--secondary-color);
     }
     .yes {
         position: relative;
@@ -609,7 +567,7 @@ span svg {
         font-family: 'Varela', sans-serif;
         font-size: 20px;
         margin: 20px 0 40px;
-        line-height: 30px;
+        line-height: initial;
         text-align: center;
     }
     span svg {
@@ -619,7 +577,8 @@ span svg {
         position: relative;
         top: 320px;
         right: 50%;
-        transform: translateX(-);
+        transform: translateX(-40px);
         animation: rotating-gear 20s infinite ;
+        display: none;
     }
 }
