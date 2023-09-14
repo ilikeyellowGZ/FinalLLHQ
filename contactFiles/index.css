@@ -17,7 +17,15 @@
       --main-para-text:font-family: 'Varela', sans-serif;
   }
 
- 
+  html, body {
+    background: url(../media/patternpad\ \(1\).svg);
+    background-position: 120px 100%;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 24px 48px;
+    overflow: hidden;
+}
 
 header {
     height: 22% ;
@@ -37,6 +45,8 @@ header h1 {
 }  p {
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 header p {
@@ -375,12 +385,15 @@ align-items: flex-end;
   }
 
   @media (min-width:1024) and (max-width:1440px)  {
-    
+    body {
+      padding: 24px;
+    }
     header {
-      height: 25% ;
+      height: 50% ;
       width: 100%;
       border-bottom: 1px solid white;
       position: relative;
+      margin: 0;
   }header h1 {
     font-size:  46px;
     color: var(--second-text-color);
@@ -395,9 +408,6 @@ body header p {
     font-family: var(--main-para-text);
     width: 100%;
     word-wrap: break-word;
-    margin: 0 !important;
-    
-    
 }
   }
   
