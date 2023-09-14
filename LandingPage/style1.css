@@ -16,7 +16,9 @@
     --font-size-desktop-H: 40px;
     --font-size-desktop-p: 18px;
 }
-
+#width-error {
+    display: none;
+}
 
 html,
 body {
@@ -349,6 +351,7 @@ nav ul a li:hover {
 .img-box {
     width: 30%;
     height: 100%;
+    margin-left: 20px;
     position: relative;
 }
 .book   {
@@ -356,11 +359,11 @@ nav ul a li:hover {
     height: 450px;
     position: absolute;
     top: 50%;
-    left: 40px;
+    left:20px;
     transform: translateY(-50%);
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3),
-    -1px -1px 30px rgba(255, 255, 255, 0.3)
-
+    -1px -1px 30px rgba(255, 255, 255, 0.3);
+    
 }
 
 .logo{
@@ -375,7 +378,7 @@ nav ul a li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 20px 0 80px;
     position: relative;
     top: -40px;
 }
@@ -446,6 +449,7 @@ nav ul a li:hover {
     right: 6%;
     transform: scale(0.7);
     animation: bump 20s infinite ;
+    display: none;
 }
 .faq-flex-container {
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.1);
@@ -643,26 +647,86 @@ a {
 
 /* -----------------from here onwards im doing media queries */
 
-@media (min-width:1000px) and (max-width: 1310px) {
+@media (min-width:1024px) and (max-width: 1440px) {
     nav h1 {
-        font-size: 80px;
+        font-size: 90px;
     }
     nav {
-        background: url(./media2/Untitled4.png);
+        background: url(../media2/Untitled4.png);
     width: 100%;
     height: 100vh;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-repeat: no-repeat;
+    }
+    nav ul a li{
+        display: inline;
+        color: var(--second-text-color);
+        margin: 20px 16px;
+        font-family: 'Varela', sans-serif;
+        font-weight: 700;
+        list-style: none;
+        padding: 0;
+        transition: all 0.4s ;
+        padding: 8px 16px;
+        font-size:32px
+        
+        
+    }
+    nav ul a {
+        text-decoration: none;
+        transition: 1s ;
+        position: relative;
+        
+    }
+    nav ul {
+        padding: 9px 14px;
+    }
+    
+    nav ul a li:hover {
+        text-shadow:   3px 6px 20px #fff44f,-3px -6px 20px var(--background-color);
+        color:var(--text-color);
     }
 
     .what-we-offer{
-        width: 100%;
+        width: 68%;
         background: #000000dc;
+    }
+    .what-we-offer h2 {
+        font-family: 'Poppins', sans-serif; 
+        font-size: 42px;
+        color: var(--second-text-color);
+        margin: 0 0 32px 0;
+    }
+    .what-we-offer .p {
+        font-family: 'Varela', sans-serif;
+        color: var(--second-text-color);
+        padding:  8px 0;
+        margin: 32px 0 0px 0  ;
+        width: 80%;
+        font-size: 16px;
+    }
+    .thumbs-up{
+        position: absolute;
+        right: -30%;
+        top: -80%;
+        z-index: 5;
+        transform: scale(0.3);
+    }
+    #callto-action {
+        height: 750px;
+        position: relative;
+        padding: 88px 56px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.87'%3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23010101' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23030303' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23040404' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23060606' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23070707' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: contain;
     }
 
     .btn-section    {
@@ -671,9 +735,13 @@ a {
         align-items: center;
         width: 84%; 
     }
+    .ready:hover, .curriculum:hover {
+        transform:scale(1.03);
+        color:var(--tertary-color)
+    }
 
     #support {
-        background: url(./media2/background0900.png);
+        background: url(../media/patternpad\ \(1\).svg);
         width: 100%;
         height: 700px;
         background-position: 20% center;
@@ -694,11 +762,11 @@ a {
         width: 90%;
         height: 300px;
         position: absolute;
-        top: 60%;
+        top: 55%;
         transform: translateY(-50%);
         box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3),
         -1px -1px 30px rgba(255, 255, 255, 0.3);
-        right: 0;
+        right: 100px;
     }
     .logo{
         height: 200%;
@@ -772,7 +840,7 @@ a {
     }
 }
 
-@media (max-width:999px) and (min-width:700px) {
+/* @media (max-width:999px) and (min-width:700px) {
     nav h1 {
         font-size: 50px;
     }
@@ -959,14 +1027,14 @@ a {
         
     }
 
-}
-@media (max-width:699px) and (min-width:0px) {
+} */
+@media (max-width:479px) and (min-width:374px) {
     nav h1 {
         font-size: 52px;
         text-align: center;
     }
     nav {
-        background: url(./media2/Untitled4.png);
+        background: url(../media2/Untitled4.png);
     width: 100%;
     height: 100vh;
     background-position: center center;
@@ -1006,8 +1074,7 @@ a {
         position: relative;
         display: flex;
         align-items: center;
-        padding: 16px 0;
-        height: 150vh;
+        padding: 16px 8px;
     }
     .what-we-offer { 
         width: 100%;
@@ -1089,7 +1156,7 @@ a {
         background-position: 20% center;
         padding: 16px 16px;
         line-height: 30px;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
     }
@@ -1097,7 +1164,8 @@ a {
         width: 100%;
         height: 100%;
         background: #000000dc;
-        display: block;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
         position: relative;
         top: 200px;
     }
@@ -1137,6 +1205,7 @@ a {
         font-family: 'Poppins', sans-serif;
         color: var(--secondary-color);
         font-size: 24px;
+        padding: 0px 16px ;
         width: 100%;
     }
     .logo-inner-box {
@@ -1146,7 +1215,7 @@ a {
     }
     
     .para-inner-box {
-        padding: 30px 0 ;
+        padding: 30px 16px ;
         font-family: 'Varela', sans-serif;
         font-size: 14px;
         color: var(--secondary-color);
@@ -1164,7 +1233,7 @@ a {
         font-weight: 600;
     }
     
-    .para-inner-box a:hover {
+    .para-inner-box a {
         text-decoration: underline;
         color: var(--tertary-color);
     }
@@ -1221,22 +1290,33 @@ a {
 
     
     .justforlogos{
-        height: 800px;
         background: var(--background-color);
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .logo-flex-container {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
     }
     
     .logo-flex-container img{
-        height: 200px;
-        width: 200px;
-        margin: 32px 0;
-        transform: translateX(45%);
+       right: 50%;
+       top: -150px;
+       transform: translateX(50%);
+        position: absolute;
+        
+    }
+    .thumb ,.stacker {
+        transform: scale(0.7);
+        display: none;
+    }
+    .upper {
+        transform: scale(1);
+        transition: all 0.3s ease-in-out;
+        
     }
     h4 {
         color: var(--tertary-color);
@@ -1262,5 +1342,31 @@ a {
     }
     100%{
         transform:scale(1.0);
+    }
+}
+
+@media (max-width:1023px) and (min-width:480){
+    body {
+        overflow: hidden;
+    }nav,#about-us{
+        display: none;
+    }
+    #width-error{
+        height: 100%;
+        width: 100%;
+        background: url(../media2/Untitled4.png);
+        background-color: #4d4dff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #width-error h1 {
+    color: var(--text-color);
+    font-family: var(--main-heaing-font);
+    font-size: 24px;
+    }
+    #width-error h6{
+        font-size: 14px;
+        font-family: var(--main-para-text);
     }
 }
