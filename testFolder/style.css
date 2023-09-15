@@ -347,6 +347,7 @@ animation: rainbow 20s linear 1s infinite ;
     #start-text h3 {
         font-size: 13px;
     }
+   
     #container {
         border-radius: 8px;
         width: 100%;

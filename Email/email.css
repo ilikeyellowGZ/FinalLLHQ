@@ -211,6 +211,8 @@ button:active {
 @media (min-width: 320px) and (max-width: 500px) {
   form {
     flex-direction: column;
+    position: relative;
+    top: -90px;
   }
   p {
     font-size: 6px;
@@ -250,18 +252,20 @@ button:active {
     color: var(--second-text-color);
     position: absolute;
     top: 5%;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
   }
 
   .flex-container p {
     font-family: var(--main-para-text);
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     position: relative;
     top: -3%;
   }
   .user input,
   .emaill input {
-    height: 60%;
+    height: 45%;
     width: 100%;
     font-size: 19px;
     color: #000;
