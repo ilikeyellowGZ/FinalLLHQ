@@ -55,8 +55,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
   justify-content: center;
   gap: 40px;
   background: #070707c5;
@@ -74,6 +74,8 @@ a {
   height: 100%;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -100px;
 }
 .user,
 .emaill {
@@ -89,6 +91,7 @@ a {
   text-align: center;
   line-height: 48px;
   color: var(--second-text-color);
+  border-bottom: 1px solid white;
 }
 
 .flex-container p {
@@ -98,7 +101,7 @@ a {
 }
 .user input,
 .emaill input {
-  height: 60%;
+  height: 70px;
   width: 100%;
   font-size: 19px;
   color: #000;
@@ -123,7 +126,7 @@ a {
 }
 
 button {
-  height: 48%;
+  height: 70px;
   width: 20%;
   display: flex;
   justify-content: center;
