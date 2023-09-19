@@ -12,8 +12,8 @@ const questions = [
   },
   {
     question: "how big is yout glizzy",
-    imgElement: "../media/Untitled.png",
     hasImg: true,
+    imgElement: " ../media/lllook (1).svg",
     answers: [
       { text: "small (sigh)", correct: true },
       { text: "microphobia type", correct: true },
@@ -627,7 +627,7 @@ const questions = [
       },
     ],
   }, */
-  {
+  /* {
     question: "The road warns you of what? (AN IMAGE IS HERE)",
     answers: [
       { text: "Winding road ahead", correct: true },
@@ -775,7 +775,5 @@ const questions = [
         correct: true,
       },
     ],
-  },
+  }, */
 ];
-
-questions.forEach((question) => {});

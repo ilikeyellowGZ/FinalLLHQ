@@ -44,7 +44,9 @@ function setNextQuestion() {
     shuffledQuestions[currentQuestionIndex].hasImg &&
     questionContainer.childElementCount === min
   ) {
-    imgElement.src = question.imgElement;
+    let image = shuffledQuestions[currentQuestionIndex].imgElement;
+    imgElement.src = image;
+
     questionContainer.appendChild(imgElement);
   } else if (!shuffledQuestions[currentQuestionIndex].hasImg) {
     //Added variable and set it to the img.
@@ -54,6 +56,8 @@ function setNextQuestion() {
       questionContainer.removeChild(existingImgElement);
     }
   }
+  console.log(shuffledQuestions[currentQuestionIndex]);
+  console.log(imgElement);
 }
 
 function showQuestion(question) {
@@ -153,7 +157,7 @@ function updateCOuntdown() {
     time.innerHTML = "00:00";
     time.style.color = "red";
     time.classList.remove("sixtysecLeft");
-    sendEmail();
+    /* sendEmail(); */
     // you  can put the email function in this funtion right here.
   }
   // the day after installing this feature, it started randomly working like wtf but aii this is coding for gang!!!!!!
