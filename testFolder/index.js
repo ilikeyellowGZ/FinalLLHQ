@@ -12,7 +12,6 @@ let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener("click", startGame, () => {});
 // i added a coloful border remove it lol
-/* sessionStorage.setItem("questionaire", `${questions.in}`); */
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
   console.log(shuffledQuestions);

@@ -4,7 +4,7 @@ const questions = [
   {
     question: "What is 2 + 2?",
     imgElement: "../media/Untitled.png",
-    hasImg: false,
+    hasImg: true,
     answers: [
       { text: "4", correct: true },
       { text: "22", correct: false },
@@ -12,8 +12,8 @@ const questions = [
   },
   {
     question: "how big is yout glizzy",
-    hasImg: true,
     imgElement: " ../media/lllook (1).svg",
+    hasImg: true,
     answers: [
       { text: "small (sigh)", correct: true },
       { text: "microphobia type", correct: true },
@@ -21,23 +21,12 @@ const questions = [
       { text: "extra tonka", correct: false },
     ],
   },
-  /* {
-    question: "do you like men?",
-    imgElement: "../media/Untitled.png",
-    hasImg: false,
-    answers: [
-      { text: "Kinda", correct: false },
-      { text: "YES!!!", correct: true },
-      { text: "Um no", correct: false },
-      { text: "IDK", correct: false },
-    ],
-  },
 
   {
     question:
       "The ____ warns other road users of your intentions to steer to the right or the left, or to turn to the right or left.",
-    imgElement: "../media/Untitled.png",
-    hasImg: false,
+    imgElement: "../imgForQuestion/CARQ.png",
+    hasImg: true,
     answers: [
       { text: "5", correct: true },
       { text: "7", correct: false },
@@ -47,6 +36,8 @@ const questions = [
   },
   {
     question: "The ____ control increase the vehicle speed.",
+    imgElement: "../imgForQuestion/CARQ.png",
+    hasImg: true,
     answers: [
       { text: "1", correct: false },
       { text: "2", correct: false },
@@ -57,6 +48,8 @@ const questions = [
   {
     question:
       "Which control helps the driver when engaging or disengaging the gear?",
+    imgElement: "../imgForQuestion/CARQ.png",
+    hasImg: true,
     answers: [
       { text: "10", correct: false },
       { text: "9", correct: false },
@@ -75,7 +68,9 @@ const questions = [
     ],
   },
   {
-    question: "Which control is used to stop the vehicle?  (AN IMAGE IS HERE)",
+    question: "Which control is used to stop the vehicle?",
+    imgElement: "../imgForQuestion/CARQ.png",
+    hasImg: true,
     answers: [
       { text: "5", correct: false },
       { text: "8", correct: false },
@@ -84,7 +79,9 @@ const questions = [
     ],
   },
   {
-    question: "To change gears, which controls are used?  (AN IMAGE IS HERE)",
+    question: "To change gears, which controls are used? ",
+    imgElement: "../imgForQuestion/CARQ.png",
+    hasImg: true,
     answers: [
       { text: "2 and 8", correct: false },
       { text: "8 and 10", correct: false },
@@ -94,7 +91,9 @@ const questions = [
   },
   {
     question:
-      "Which control is used to make sure your parked vehicle doesn't move?  (AN IMAGE IS HERE)",
+      "Which control is used to make sure your parked vehicle doesn't move?",
+    imgElement: "../imgForQuestion/CARQ.png",
+    hasImg: true,
     answers: [
       { text: "1", correct: false },
       { text: "2", correct: false },
@@ -103,15 +102,16 @@ const questions = [
     ],
   },
   {
-    question:
-      "Which control is used to accelerate your vehicle? (AN IMAGE IS HERE) ",
+    question: "Which control is used to accelerate your vehicle? ",
+    imgElement: "../imgForQuestion/CARQ.png",
+    hasImg: true,
     answers: [
       { text: "1", correct: false },
       { text: "3", correct: false },
       { text: "7", correct: false },
       { text: "10", correct: true },
     ],
-  },
+  } /*
   {
     question:
       "This command sign informs you that this of the road may be used by? (AN IMAGE IS HERE)",
@@ -399,7 +399,7 @@ const questions = [
       { text: "Look out for predestrians.", correct: false },
       { text: "Follow the correct route in the intersection.", correct: true },
     ],
-  },
+  }, */,
   {
     question:
       "Within an urban area, you may not leave your vehicle abandon for than ____ .",
@@ -410,8 +410,9 @@ const questions = [
     ],
   },
   {
-    question:
-      "This road sign warns riders or drivers abou the ____. (AN IMAGE IS HERE)",
+    question: "This road sign warns riders or drivers about the ____. ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Merges_lanes.png",
     answers: [
       { text: "Lanes of the road increasing soon.", correct: false },
       { text: "Lane split ahead.", correct: false },
@@ -432,14 +433,16 @@ const questions = [
   },
   {
     question:
-      "What should be your reaction if you come across this road sign? (AN IMAGE IS HERE)",
+      "What should be your reaction if you come across this road sign? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/SLow_down.png",
     answers: [
       {
         text: "Slow down enough to able to round the curves safely ot stop within the sight distance you can see.",
         correct: true,
       },
       {
-        text: "Speea fast enough to able to round the sharp curves.",
+        text: "Speed fast enough to be able to round the sharp curves.",
         correct: false,
       },
       { text: "Never slow down to take the curves.", correct: false },
@@ -453,18 +456,22 @@ const questions = [
         correct: false,
       },
       {
-        text: "Whitin 6 meters of any bridge, tunnel or subway.",
+        text: "Within 6 meters of any bridge, tunnel or subway.",
         correct: true,
       },
       { text: "If your vehicle brakes are faulty.", correct: false },
     ],
   },
   {
-    question:
-      "What does this road sign indicate to a driver ot rider. (AN IMAGE IS HERE)",
+    question: "What does this road sign indicate to a driver ot rider. ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Where_to_go.png",
     answers: [
       { text: "Indicates that the freeway splits ahead", correct: false },
-      { text: "ind", correct: false },
+      {
+        text: "Indicates the position of the near side on ramp at a freeway",
+        correct: false,
+      },
       {
         text: "Shows where is crossing the freeway and where the freeway is heading too.",
         correct: true,
@@ -475,16 +482,18 @@ const questions = [
     question:
       "Where on the public road are you not allowed to park your vehicle.",
     answers: [
-      { text: "Near a school.", correct: true },
+      { text: "Near a school.", correct: false },
       {
         text: "On the same side as a fire hydrant within 1.5 meters of the fire hydrant.",
-        correct: false,
+        correct: true,
       },
       { text: "Near a tree.", correct: false },
     ],
   },
   {
-    question: "This road sign warns you of what? (AN IMAGE IS HERE) ",
+    question: "This road sign warns you of what?  ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/one_side_only.png",
     answers: [
       { text: "Road narrows from one side only.", correct: true },
       { text: "Road narrows from both sides", correct: false },
@@ -524,7 +533,9 @@ const questions = [
     ],
   },
   {
-    question: "This raod sign inform you of an ____ ahead? (AN IMAGE IS HERE) ",
+    question: "This road sign inform you of an ____ ahead? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/arrestor_bed.png",
     answers: [
       { text: "Arrestor bed.", correct: true },
       { text: "Old gas station.", correct: false },
@@ -532,10 +543,15 @@ const questions = [
     ],
   },
   {
-    question: "The road sign notifies road users about? (AN IMAGE IS HERE) ",
+    question: "The road sign notifies road users about? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Curves.png",
     answers: [
       { text: "One or more concealed driveways.", correct: false },
-      { text: "Two sharp curves ahead in oppsite directions.", correct: false },
+      {
+        text: "Two sharp curves ahead in opposite directions.",
+        correct: false,
+      },
       { text: "A series of curves ahead.", correct: true },
     ],
   },
@@ -555,28 +571,24 @@ const questions = [
       "what colour and how many retro-reflectors should be fitted on the rear of a light motor vehicle? ",
     answers: [
       { text: "Two red retro-reflectors", correct: true },
-      { text: "Three yello retro-reflectors", correct: false },
+      { text: "Three yellow retro-reflectors", correct: false },
       { text: "Two pink retro-reflectors", correct: false },
     ],
   },
   {
-    question: "What is 2 + 2?",
-    answers: [
-      { text: "4", correct: true },
-      { text: "22", correct: false },
-    ],
-  },
-  {
-    question: "This road sign informs you of what? (AN IMAGE IS HERE)",
+    question: "This road sign informs you of what? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Locations.png",
     answers: [
       { text: "A cross-route advance directions.", correct: true },
-      { text: "An exit sequence.", correct: true },
+      { text: "An exit sequence.", correct: false },
+      { text: "The locations around a driver.", correct: false },
       { text: "A far-side advance on-ramp direction.", correct: false },
     ],
   },
   {
     question:
-      "A speed limit fo ____ should be appy in respect of every public road situated within urban area.",
+      "A speed limit for  ____ should be apply in respect of every public road situated within urban area.",
     answers: [
       { text: "120 kilometers per hour.", correct: false },
       { text: "60 kilometers per hour.", correct: true },
@@ -584,7 +596,9 @@ const questions = [
     ],
   },
   {
-    question: "What is the purpose of this road sign? (AN IMAGE IS HERE)",
+    question: "What is the purpose of this road sign? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Train.png",
     answers: [
       { text: "To warn you of a train station ahead.", correct: false },
       { text: "To warn you of a bus station ahead.", correct: false },
@@ -601,17 +615,19 @@ const questions = [
     ],
   },
   {
-    question:
-      "This guidance road marking warns you to be on a look out for? (AN IMAGE IS HERE) ",
+    question: "This guidance road marking warns you to be on a look out for?",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Cyclist.png",
     answers: [
-      { text: "Children ahead", correct: true },
+      { text: "Children ahead", correct: false },
       { text: "Pedestrians ahead", correct: false },
       { text: "Cyclists ahead", correct: true },
+      { text: "People ahead", correct: false },
     ],
   },
   {
     question:
-      "How many windscreen wiper a ligh?heavy motor vehicle should have and when in operation it should wipe the outside  of the windscreen continuoslt evenly and adequately?",
+      "How many windscreen wiper a light/heavy motor vehicle should have and when in operation it should wipe the outside  of the windscreen continuoslt evenly and adequately?",
     answers: [
       {
         text: "At least one windscreen wiper should the windscreen directly in front of the driver continously, evenly and adequatly.",
@@ -622,17 +638,20 @@ const questions = [
         correct: false,
       },
       {
-        text: "Three winderscreen wipers. Two fitted to the front windscreen and one fitted on the back windscreen of the vehicle. ",
+        text: "Three windscreen wipers. Two fitted to the front windscreen and one fitted on the back windscreen of the vehicle. ",
         correct: false,
       },
     ],
-  }, */
-  /* {
-    question: "The road warns you of what? (AN IMAGE IS HERE)",
+  },
+  {
+    question: "The road warns you of what?",
+    hasImg: true,
+    imgElement: "../imgForQuestion/winding.png",
     answers: [
       { text: "Winding road ahead", correct: true },
       { text: "Concealed driveway ahead", correct: false },
       { text: "Combined curves ahead", correct: false },
+      { text: "It means nothing. Continue as is.", correct: false },
     ],
   },
   {
@@ -644,12 +663,16 @@ const questions = [
         correct: false,
       },
       { text: "When you want to take a break from driving.", correct: false },
+      {
+        text: "When you feel like its the right time to chill.",
+        correct: false,
+      },
     ],
   },
   {
     question: "This road sign alerts drivers or riders of a ______ . ",
     hasImg: true,
-    imgElement: "../imgForQuestion/blob-transformed-removebg-preview",
+    imgElement: "../imgForQuestion/blob-transformed-removebg-preview.png",
     answers: [
       { text: "Hairpin bend to the right ahead", correct: false },
       { text: "Sharp curve to the right ahead", correct: true },
@@ -670,9 +693,9 @@ const questions = [
     hasImg: false,
   },
   {
-    question: "This road sign informs you of what?(AN IMAGE IS HERE) ",
+    question: "This road sign informs you of what? ",
     hasImg: true,
-    imgElement: "",
+    imgElement: "../imgForQuestion/SignsGPT.png",
     answers: [
       {
         text: "That you are on your way to the places indicated and that these  destinations are at the distances indicated by the sign.",
@@ -696,7 +719,7 @@ const questions = [
         correct: false,
       },
       {
-        text: "If you are in vehicle A, you shoould stop before the line indicated in the Im at RTM1",
+        text: "If you are in vehicle A, you should stop before the line indicated in the Im at RTM1",
         correct: true,
       },
     ],
@@ -730,12 +753,12 @@ const questions = [
         correct: false,
       },
       { text: "Drive at 60km/h.", correct: false },
-      { text: "Always drive on the left side of the raod.", correct: true },
+      { text: "Always drive on the left side of the road.", correct: true },
     ],
   },
   {
     question:
-      "A light/heavy motor vehicle shoud not be used on a public road carrying any goods, which project ____ ",
+      "A light/heavy motor vehicle should not be used on a public road carrying any goods, which project ____ ",
     answers: [
       {
         text: "More than 1.8 meters to the back end of the vehicle.",
@@ -775,5 +798,5 @@ const questions = [
         correct: true,
       },
     ],
-  }, */
+  },
 ];
