@@ -14,7 +14,6 @@ startButton.addEventListener("click", startGame, () => {});
 // i added a coloful border remove it lol
 nextButton.addEventListener("click", () => {
   currentQuestionIndex++;
-  console.log(shuffledQuestions);
 
   setNextQuestion();
 });
@@ -38,10 +37,12 @@ function setNextQuestion() {
 
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 
-  if (
-    shuffledQuestions[currentQuestionIndex].hasImg &&
-    questionContainer.childElementCount === min
-  ) {
+  if (shuffledQuestions[currentQuestionIndex].hasImg) {
+    const existingImgElement = questionContainer.querySelector("img");
+    //Removes the image if it has one.
+    if (existingImgElement) {
+      questionContainer.removeChild(existingImgElement);
+    }
     let image = shuffledQuestions[currentQuestionIndex].imgElement;
     imgElement.src = image;
 
@@ -54,8 +55,6 @@ function setNextQuestion() {
       questionContainer.removeChild(existingImgElement);
     }
   }
-  console.log(shuffledQuestions[currentQuestionIndex]);
-  console.log(imgElement);
 }
 
 function showQuestion(question) {
