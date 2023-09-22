@@ -37,8 +37,6 @@
 
 .swiper-slide {
     width: 100%;
-    
-    border: 1px solid red;
     height: 100%;
     position: relative;
     display: flex;justify-content: center;
@@ -409,5 +407,53 @@ a {
               transform-origin: -1800px 50%;
       opacity: 1;
     }
+  }
+
+  @media (min-width: 320px) and (max-width: 500px) {
+     .motorcycle , .vehicle , .heavyVehicle {
+      background: #333;
+      overflow: hidden;
+      padding: 0 ;
+    }
+    .swiper-slide-active img {
+      animation: none;
+      display: none;
+    }
+    .informationContainer {
+      width: 95%;
+      position: absolute;
+      left: 2.5%;
+      top: 70px;
+      border-radius: 24px ;
+      padding: 16px 16px;
+      background: #ffffffb9;
+  }
+  .mainButtons {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    height: 90px;
+    width: 320px;
+}
+.btn {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border-radius: 8px ;
+  position: relative;
+  background:  #3e3e3e ;
+  font-family:  var(--main-heading-font);
+  font-size: 24px;
+  color: white;
+  transform-style:none;
+  transition: .4s;
+  overflow: hidden;
+  border-right: 1px solid #616161;
+  border-top: 1px solid #616161;
+   /*z-index: ; ima leave this z index nonsense to remind niggas that these thing right here skafs problems */
+  cursor: pointer;
+  transform: rotateY(0deg) translateX(-20deg) rotateZ(0deg);
+  box-shadow: -1px 1px #ffa500 , -2px 2px #ffa500, -3px 3px #ffa500, -4px 4px #ffa500, -5px 5px #ffa500, -6px 6px #ffa500, -7px 7px #ffa500, -8px 8px #ffa500;   
+}
   }
   

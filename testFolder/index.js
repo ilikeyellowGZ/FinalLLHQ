@@ -32,7 +32,6 @@ function startGame() {
 
 function setNextQuestion() {
   resetState();
-  const min = 1;
   const imgElement = document.createElement("img");
 
   showQuestion(shuffledQuestions[currentQuestionIndex]);
@@ -106,6 +105,7 @@ function selectAnswer(e) {
     userScore = 0;
     // i added the scoring system right here (up arrow right)
     startButton.innerText = "Restart";
+    startButton.classList.add();
     startButton.classList.remove("hide");
   }
   // The email function or any further logic can be added here
