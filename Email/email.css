@@ -25,6 +25,7 @@ body {
   width: 100%;
   background-repeat: repeat;
   background-size: cover;
+  height: 100svh;
 }
 .emial-section {
   width: 100%;
@@ -34,7 +35,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0;
-  border: 1px solid red;
 }
 
 #about {
@@ -188,12 +188,34 @@ button:active {
 }
 
 @media (min-width: 600px) and (max-width: 1440px) {
-  form {
+  #form {
     width: 100%;
+    max-width: 740px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 0%;
+  }
+  .flex-container {
+    z-index: 4;
+    position: relative;
+    width: 60dvw;
+    height: 80dvh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 40px;
+    background: #070707c5;
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.096),
+      -1px -1px 30px rgba(255, 255, 255, 0.096);
+    padding: 60px 30px;
+    color: white;
   }
   .user,
   .emaill {
-    height: 80%;
+    height: 75px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -201,8 +223,8 @@ button:active {
   }
 
   button {
-    height: 48%;
-    width: 30%;
+    height: 70px;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +257,7 @@ button:active {
     flex-direction: column;
     z-index: 100;
     position: relative;
-    top: -20px;
+    top: -38px;
   }
   p {
     font-size: 6px;
