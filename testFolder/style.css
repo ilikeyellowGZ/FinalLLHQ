@@ -20,7 +20,7 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.87'%3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23010101' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23030303' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23040404' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23060606' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23070707' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
     font-family: 'Raleway', sans-serif;
     width: 100%;
-    height: 100%;
+    height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
