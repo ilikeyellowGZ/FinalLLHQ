@@ -33,11 +33,10 @@ function startGame() {
 
 function setNextQuestion() {
   resetState();
-
-  showQuestion(shuffledQuestions[currentQuestionIndex]);
+  const min = 1;
   const imgElement = document.createElement("img");
 
-  const min = 1;
+  showQuestion(shuffledQuestions[currentQuestionIndex]);
 
   if (
     shuffledQuestions[currentQuestionIndex].hasImg &&

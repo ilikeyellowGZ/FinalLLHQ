@@ -111,10 +111,12 @@ const questions = [
       { text: "7", correct: false },
       { text: "10", correct: true },
     ],
-  } /*
+  },
   {
     question:
-      "This command sign informs you that this of the road may be used by? (AN IMAGE IS HERE)",
+      "This command sign informs you that this of the road may be used by? ",
+    imgElement: "../imgForQuestion/cars_only.png",
+    hasImg: true,
     answers: [
       { text: "Heavy motor vehicle only.", correct: false },
       { text: "Motors car/Light motor vehicles only.", correct: true },
@@ -122,7 +124,9 @@ const questions = [
     ],
   },
   {
-    question: "What does this road sign forbid?  (AN IMAGE IS HERE)",
+    question: "What does this road sign forbid? ",
+    imgElement: "../imgForQuestion/no_parking2.png",
+    hasImg: true,
     answers: [
       { text: "No parking space in the area for vehicle.", correct: true },
       { text: "You should not drive beyond this sign.", correct: false },
@@ -130,7 +134,9 @@ const questions = [
     ],
   },
   {
-    question: "The road sign prohibits drivers from?  (AN IMAGE IS HERE)",
+    question: "The road sign prohibits drivers from? ",
+    imgElement: "../imgForQuestion/no_parking.png",
+    hasImg: true,
     answers: [
       { text: "Driving there between 06:00 and 09:00", correct: true },
       { text: "Stopping at 06:00 to 09:00", correct: false },
@@ -146,8 +152,9 @@ const questions = [
     ],
   },
   {
-    question:
-      "Which vehicle type is allowed on this part of the road. (AN IMAGE IS HERE)",
+    question: "Which vehicle type is allowed on this part of the road. ",
+    imgElement: "../imgForQuestion/cars_only.png",
+    hasImg: true,
     answers: [
       { text: "Motor cars only.", correct: true },
       { text: "Mini buses only", correct: false },
@@ -169,8 +176,9 @@ const questions = [
     ],
   },
   {
-    question:
-      "What are these road markings indicating to a driver/rider.  (AN IMAGE IS HERE)",
+    question: "What are these road markings indicating to a driver/rider. ",
+    imgElement: "../imgForQuestion/Drive_straight.png",
+    hasImg: true,
     answers: [
       {
         text: "Drive to the opposite direction shown by the arrow.",
@@ -180,7 +188,7 @@ const questions = [
         text: "Drive only in the direction indicated by the arrow.",
         correct: true,
       },
-      { text: "Procced straight only.", correct: false },
+      { text: "Proceed straight only.", correct: false },
     ],
   },
   {
@@ -192,8 +200,9 @@ const questions = [
     ],
   },
   {
-    question:
-      "This road sing warns drivers or riders that ____ .  (AN IMAGE IS HERE)",
+    question: "This road sing warns drivers or riders that ____ .  ",
+    imgElement: "../imgForQuestion/merging_soon.png",
+    hasImg: true,
     answers: [
       {
         text: "One of the lanes of the carriageway is coming to an end.",
@@ -216,12 +225,13 @@ const questions = [
     ],
   },
   {
-    question:
-      "This road sign gives notice to raod users that ____ .  (AN IMAGE IS HERE)",
+    question: "This road sign gives notice to road users that ____ .  ",
+    imgElement: "../imgForQuestion/narrow_right.png",
+    hasImg: true,
     answers: [
       { text: "The road narrows ahead", correct: false },
       {
-        text: "The double-lane raod will narrow by a full lane from the left-hand side.",
+        text: "The double-lane road will narrow by a full lane from the left-hand side.",
         correct: false,
       },
       {
@@ -261,20 +271,22 @@ const questions = [
     answers: [
       { text: "Ordered to do so by a traffic officer", correct: true },
       { text: "He/She feels like.", correct: false },
-      { text: "The driver is under the infuence of alcohol.", correct: false },
+      { text: "The driver is under the influence of alcohol.", correct: false },
     ],
   },
   {
-    question: "This road sign informs road users of what? (AN IMAGE IS HERE)",
+    question: "This road sign informs road users of what? ",
+    imgElement: "../imgForQuestion/temp_construction.png",
+    hasImg: true,
     answers: [
       { text: "A temporary construction ahead.", correct: true },
       { text: "loose stones or gravel on the road.", correct: false },
-      { text: "A grader is working on the carriageway ahead.", correct: true },
+      { text: "A grader is working on the carriageway ahead.", correct: false },
     ],
   },
   {
     question:
-      "A cellular or mobile telephone or any other commmunication device should ____ while driving.",
+      "A cellular or mobile telephone or any other communication device should ____ while driving.",
     answers: [
       { text: "Be handled with both hands.", correct: false },
       { text: "Be handled with one hand.", correct: false },
@@ -282,8 +294,9 @@ const questions = [
     ],
   },
   {
-    question:
-      "What are these markings indicating to a driver/rider. (AN IMAGE IS HERE)*3 ",
+    question: "What are these markings indicating to a driver/rider. ",
+    imgElement: "../imgForQuestion/Lanes_increasing2.png",
+    hasImg: true,
     answers: [
       {
         text: "They are indicating an increased in the number of lanes ahead.",
@@ -303,11 +316,14 @@ const questions = [
     ],
   },
   {
-    question: "This road sign informs you of what? (AN IMAGE IS HERE)",
+    question: "This road sign informs you of what? ",
+    imgElement: "../imgForQuestion/Lanes_increase.png",
+    hasImg: true,
+
     answers: [
       { text: "Lanes of the road will merge soon.", correct: false },
 
-      { text: "Lanes of the road will be incresing soon.", correct: true },
+      { text: "Lanes of the road will be increasing soon.", correct: true },
       { text: "Lanes of the road will be regulated.", correct: false },
     ],
   },
@@ -317,30 +333,33 @@ const questions = [
     answers: [
       { text: "There is obstruction and moving traffic.", correct: true },
       {
-        text: "The vehicle can cross the road with obstuctinf or endangering any traffic.",
+        text: "The vehicle can cross the road with obstructing or endangering any traffic.",
         correct: false,
       },
       { text: "The road is clear of moving traffic", correct: false },
     ],
   },
   {
-    question: "This road sign notifies you of what? (AN IMAGE IS HERE)",
+    question: "This road sign notifies you of what? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Two_way.png",
     answers: [
       { text: "The lane ends ahead.", correct: false },
       { text: "Two-way traffic ahead.", correct: true },
       { text: "Two-way traffic crossroad ahead.", correct: false },
+      { text: "Go the opposite direction.", correct: false },
     ],
   },
   {
     question:
-      "An SABS approved numebr plate(s) shall be affixed to a vehicle ____ .",
+      "An SABS approved number plate(s) shall be affixed to a vehicle ____ .",
     answers: [
       {
         text: "In such a manner that the whole number plate has a dark background.",
         correct: false,
       },
       {
-        text: "In such a manner that it is easliy detachable.",
+        text: "In such a manner that it is easily detachable.",
         correct: false,
       },
       {
@@ -350,8 +369,9 @@ const questions = [
     ],
   },
   {
-    question:
-      "This road sign informs a driver/rider of what? (AN IMAGE IS HERE)",
+    question: "This road sign informs a driver/rider of what? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Long_highway.png",
     answers: [
       {
         text: "The freeway will splits ahead and the lanes lead to different destinations as indicated.",
@@ -367,14 +387,18 @@ const questions = [
       { text: "A motor vehicle", correct: false },
       { text: "An animal drawn vehicle", correct: true },
       { text: "A motorcycle", correct: false },
+      { text: "A Mini van", correct: false },
     ],
   },
   {
-    question: "In which areas can this road sign be found? (AN IMAGE IS HERE)",
+    question: "In which areas can this road sign be found? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Mountion.png",
     answers: [
       { text: "On any road.", correct: false },
       { text: "In mountainous areas.", correct: true },
-      { text: "In the vicinty of farms", correct: false },
+      { text: "In the vicinity of farms", correct: false },
+      { text: "In/or around wildlife", correct: false },
     ],
   },
   {
@@ -386,20 +410,23 @@ const questions = [
       },
       { text: "Indicate your intention in good time.", correct: false },
       {
-        text: "Drag or spin any wheel upon the suface of the roadway, except in the case of an emergency.",
+        text: "Drag or spin any wheel upon the surface of the roadway, except in the case of an emergency.",
         correct: true,
       },
     ],
   },
   {
     question:
-      "How should you react wehn you come across this raod marking on the roadway? (AN IMAGE IS HERE)",
+      "How should you react when you come across this road marking on the roadway? ",
+    hasImg: true,
+    imgElement: "../imgForQuestion/Follow_route.png",
+
     answers: [
-      { text: "Give right of way to other trafiics", correct: false },
-      { text: "Look out for predestrians.", correct: false },
+      { text: "Give right of way to others in traffic", correct: false },
+      { text: "Look out for pedestrians.", correct: false },
       { text: "Follow the correct route in the intersection.", correct: true },
     ],
-  }, */,
+  },
   {
     question:
       "Within an urban area, you may not leave your vehicle abandon for than ____ .",
@@ -412,7 +439,7 @@ const questions = [
   {
     question: "This road sign warns riders or drivers about the ____. ",
     hasImg: true,
-    imgElement: "../imgForQuestion/Merges_lanes.png",
+    imgElement: "../imgForQuestion/Merging_lanes.png",
     answers: [
       { text: "Lanes of the road increasing soon.", correct: false },
       { text: "Lane split ahead.", correct: false },
@@ -525,7 +552,9 @@ const questions = [
   },
   {
     question:
-      "What action should you take when come across these road markings? (AN IMAGE IS HERE) ",
+      "What action should you take when come across these road markings? ",
+    imgElement: "../imgForQuestion/drive_center.png",
+    hasImg: true,
     answers: [
       { text: "Race other drivers.", correct: false },
       { text: "Drive in the center of your dedicated lane.", correct: true },
@@ -607,7 +636,7 @@ const questions = [
   },
   {
     question:
-      "Displaying an emergency warning triangle shall not apply to vehicle being stationary____ .(1) In a place where a road traffic sing authorises the loading or unloading of goods. (2) In compliance of with raod traffic sign or directions given by the traffic officer. (3) In the course of events accompanying the carrying out of a State or municipal function.   ",
+      "Displaying an emergency warning triangle shall not apply to vehicle being stationary____ .(1) In a place where a road traffic sing authorizes the loading or unloading of goods. (2) In compliance of with raod traffic sign or directions given by the traffic officer. (3) In the course of events accompanying the carrying out of a State or municipal function.   ",
     answers: [
       { text: "Only (1) and (2) are correct.", correct: true },
       { text: "Only (3) is correct", correct: false },
@@ -617,7 +646,7 @@ const questions = [
   {
     question: "This guidance road marking warns you to be on a look out for?",
     hasImg: true,
-    imgElement: "../imgForQuestion/Cyclist.png",
+    imgElement: "../imgForQuestion/Cyclist.jpg",
     answers: [
       { text: "Children ahead", correct: false },
       { text: "Pedestrians ahead", correct: false },
@@ -627,10 +656,10 @@ const questions = [
   },
   {
     question:
-      "How many windscreen wiper a light/heavy motor vehicle should have and when in operation it should wipe the outside  of the windscreen continuoslt evenly and adequately?",
+      "How many windscreen wiper a light/heavy motor vehicle should have and when in operation it should wipe the outside  of the windscreen continuously evenly and adequately?",
     answers: [
       {
-        text: "At least one windscreen wiper should the windscreen directly in front of the driver continously, evenly and adequatly.",
+        text: "At least one windscreen wiper should the windscreen directly in front of the driver continuously, evenly and adequately.",
         correct: true,
       },
       {
@@ -707,7 +736,7 @@ const questions = [
   },
   {
     question: "The road marking RTM1 below tell the driver?",
-    imgElement: "../imgForQuestion/if_vehicle_a",
+    imgElement: "../imgForQuestion/if_vehicle_a.gif",
     hasImg: true,
     answers: [
       {
