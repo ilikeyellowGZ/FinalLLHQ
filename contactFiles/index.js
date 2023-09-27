@@ -57,7 +57,7 @@ function sendEmail() {
 
   emailjs.send(serviceId, templateId, params).then((res) => {
     setTimeout(() => {
-      window.location.href = "../LandingPage/index.html";
-    }, 2000);
+      window.location.href = "../index.html";
+    }, 1000);
   });
 }

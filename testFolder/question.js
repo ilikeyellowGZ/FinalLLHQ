@@ -2,23 +2,12 @@ const questionContainer = document.getElementById("questionsBox"); // Replace wi
 
 const questions = [
   {
-    question: "What is 2 + 2?",
-    imgElement: "../media/Untitled.png",
+    question: "How are you enjoying the test so far?",
+    imgElement: "../media/1111111.png",
     hasImg: true,
     answers: [
-      { text: "4", correct: true },
-      { text: "22", correct: false },
-    ],
-  },
-  {
-    question: "how big is yout glizzy",
-    imgElement: " ../media/lllook (1).svg",
-    hasImg: true,
-    answers: [
-      { text: "small (sigh)", correct: true },
-      { text: "microphobia type", correct: true },
-      { text: "average", correct: false },
-      { text: "extra tonka", correct: false },
+      { text: "The test is informative", correct: true },
+      { text: "Thank you for the practice test", correct: true },
     ],
   },
 
@@ -411,7 +400,7 @@ const questions = [
       { text: "Indicate your intention in good time.", correct: false },
       {
         text: "Drag or spin any wheel upon the surface of the roadway, except in the case of an emergency.",
-        correct: true,
+        correct: false,
       },
     ],
   },
@@ -755,7 +744,7 @@ const questions = [
   },
   {
     question: `The road sign warns you of what?`,
-    imgElement: "../imgForQuestion/Motor-gate_question",
+    imgElement: "../imgForQuestion/Motor-gate_question.png",
     hasImg: true,
     answers: [
       { text: "A motor gate to the left of the road", correct: false },

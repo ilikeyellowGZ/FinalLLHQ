@@ -100,7 +100,7 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide");
   } else {
-    /* sendEmail(); */
+    sendEmail();
     console.log(`${userScore}/${questions.length}`);
     userScore = 0;
     // i added the scoring system right here (up arrow right)
@@ -154,7 +154,7 @@ function updateCOuntdown() {
     time.innerHTML = "00:00";
     time.style.color = "red";
     time.classList.remove("sixtysecLeft");
-    /* sendEmail(); */
+    sendEmail();
     // you  can put the email function in this funtion right here.
   }
   // the day after installing this feature, it started randomly working like wtf but aii this is coding for gang!!!!!!
@@ -181,7 +181,7 @@ function sendEmail() {
   let templateId = "template_hbxiot9";
 
   emailjs.send(serviceId, templateId, params).then((res) => {
-    alert("Email sent Succ");
+    window.location.href = "../index.html";
   });
   //added the email function so do not redo the test alot,and im actually doing well i do not need any assistance W.
 }
