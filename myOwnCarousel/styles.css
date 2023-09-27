@@ -97,12 +97,6 @@
 overflow: hidden;
 }
 
-.random {
-    background: url(../imgForCaro/background\(4\)\ \(1\).png);
-    background-size: cover;
-    background-position-y: bottom;
-    background-repeat: repeat-x no-repeat;
-}
 
 .heavyVehicle img , .motorcycle img , .vehicle img {
     width: 200px;
