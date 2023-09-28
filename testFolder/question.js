@@ -103,7 +103,7 @@ const questions = [
   },
   {
     question:
-      "This command sign informs you that this of the road may be used by? ",
+      "This command sign informs you that this side of the road may be used by? ",
     imgElement: "../imgForQuestion/cars_only.png",
     hasImg: true,
     answers: [
@@ -133,7 +133,7 @@ const questions = [
     ],
   },
   {
-    question: "For the next 500m you are prohibited from?",
+    question: "For the next 500m you are prohibited from(imagehere)?",
     answers: [
       { text: "racing with other vehicles.", correct: false },
       { text: "Driving slow.", correct: false },
@@ -237,7 +237,7 @@ const questions = [
         correct: false,
       },
       {
-        text: "White, yellow or amber light to the front and yellow, amber ot red to the rear",
+        text: "White, yellow or amber light to the front and yellow, amber at red to the rear",
         correct: false,
       },
       {
@@ -353,7 +353,7 @@ const questions = [
       },
       {
         text: "In an upright position or within 30 degrees of such position.",
-        correct: false,
+        correct: true,
       },
     ],
   },
@@ -395,12 +395,12 @@ const questions = [
     answers: [
       {
         text: "Give out hand signals for a reason beyond your control.",
-        correct: true,
+        correct: false,
       },
       { text: "Indicate your intention in good time.", correct: false },
       {
         text: "Drag or spin any wheel upon the surface of the roadway, except in the case of an emergency.",
-        correct: false,
+        correct: true,
       },
     ],
   },
@@ -625,7 +625,7 @@ const questions = [
   },
   {
     question:
-      "Displaying an emergency warning triangle shall not apply to vehicle being stationary____ .(1) In a place where a road traffic sing authorizes the loading or unloading of goods. (2) In compliance of with raod traffic sign or directions given by the traffic officer. (3) In the course of events accompanying the carrying out of a State or municipal function.   ",
+      "Displaying an emergency warning triangle shall not apply to vehicle being stationary____ .(1) In a place where a road traffic sing authorizes the loading or unloading of goods. (2) In compliance of with road traffic sign or directions given by the traffic officer. (3) In the course of events accompanying the carrying out of a State or municipal function.   ",
     answers: [
       { text: "Only (1) and (2) are correct.", correct: true },
       { text: "Only (3) is correct", correct: false },

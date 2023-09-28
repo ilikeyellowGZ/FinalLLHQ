@@ -101,7 +101,7 @@ function selectAnswer(e) {
     nextButton.classList.remove("hide");
   } else {
     sendEmail();
-    console.log(`${userScore}/${questions.length}`);
+    window.location.href = "../index.html";
     userScore = 0;
     // i added the scoring system right here (up arrow right)
     startButton.innerText = "Restart";
@@ -155,6 +155,7 @@ function updateCOuntdown() {
     time.style.color = "red";
     time.classList.remove("sixtysecLeft");
     sendEmail();
+    window.location.href = "../index.html";
     // you  can put the email function in this funtion right here.
   }
   // the day after installing this feature, it started randomly working like wtf but aii this is coding for gang!!!!!!
