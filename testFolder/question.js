@@ -133,7 +133,9 @@ const questions = [
     ],
   },
   {
-    question: "For the next 500m you are prohibited from(imagehere)?",
+    question: "For the next 500m you are prohibited from?",
+    imgElement: "../imgForQuestion/Overtaking_other_vehicles.png",
+    hasImg: true,
     answers: [
       { text: "racing with other vehicles.", correct: false },
       { text: "Driving slow.", correct: false },
