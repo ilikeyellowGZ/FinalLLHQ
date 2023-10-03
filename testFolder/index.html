@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://www.paypal.com/sdk/js?client-id=AT3dp0plxWE_HgvVdKcVDwk9UoFFydPxKl0vnop-O8X90t8Ny307D0PRxqHiQ2-rHz0YEc--6MOvcu_B">
+    </script>
     <link rel="icon" href="../media2/logo-for-LLHQ-removebg-preview.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -11,6 +13,35 @@
     <title>Quiz App</title>
   </head>
   <body>
+    <div id="dona" class="hide">
+      <input type="number" id="amount" placeholder="Enter an amount in USD$">
+    <div id="paypal"></div>
+<div id="close">x</div>  
+
+  </div>
+    <!-- <div id="donationCircle">  <span class='w0'>S</span>
+      <span class='w1'>I</span>
+      <span class='w2'>M</span>
+      <span class='w3'>P</span>
+      <span class='w4'>L</span>
+      <span class='w5'>E</span>
+      <span class='w6'> a</span>
+      <span class='w7'>A</span>
+      <span class='w8'>R</span>
+      <span class='w9'>C</span></div> -->
+      <section id="Donations">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path id="circlePath" fill="none" stroke-width="9" stroke="hsl(0 100% 50% / 0.5)" d="
+                M 10, 50
+                a 40,40 0 1,1 80,0
+                a 40,40 0 1,1 -80,0
+              " />
+          <text id="text" font-family="Poppins" font-size="0.7vw" font-weight="bold" fill="var(--text-1)">
+            <textPath id="textPath" href="#circlePath"> Donate &#x2022; Donate  &#x2022; Donate &#x2022;Donate &#x2022; Donate  &#x2022;  </textPath>
+          </text>
+        </svg>
+        <h1 class="middle-Pointer"></h1>
+      </section>
     <div id="container">
       <div id="start-text">
         <h3>
