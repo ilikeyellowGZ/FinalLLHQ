@@ -9,5 +9,5 @@ form.addEventListener("submit", (e) => {
   localStorage.setItem("UserName", `${username.value}`);
   localStorage.setItem("UserEmail", `${email.value}`);
 
-  window.location.href = "../myOwnCarousel/index.html";
+  window.location.href = "../Options/index.html";
 });

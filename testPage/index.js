@@ -100,12 +100,10 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hide");
   } else {
-    sendEmail();
-    window.location.href = "../index.html";
     userScore = 0;
     // i added the scoring system right here (up arrow right)
     startButton.innerText = "Restart";
-    startButton.classList.add();
+    sendEmail();
     startButton.classList.remove("hide");
   }
   // The email function or any further logic can be added here
@@ -155,7 +153,6 @@ function updateCOuntdown() {
     time.style.color = "red";
     time.classList.remove("sixtysecLeft");
     sendEmail();
-    window.location.href = "../index.html";
     // you  can put the email function in this funtion right here.
   }
   // the day after installing this feature, it started randomly working like wtf but aii this is coding for gang!!!!!!
@@ -176,9 +173,10 @@ function sendEmail() {
     sendername: "LearnerLicenseHQ",
     to: usersEmail,
     subjects: "Your practice learners license test has returned",
-    message: `Hello ${usersName}  your results have returned you got ${userScore}/${questions.length}`,
+    message1: `Hey ${usersName} how are you doing today?? `,
+    message: `You handled this test well ${usersName}. I’m impressed by you. Let’s check out your marks and see your successes. SCORE:${userScore}/${questions.length}`,
   };
-  let serviceId = "service_0cea2w7";
+  let serviceId = "default_service";
   let templateId = "template_hbxiot9";
 
   emailjs.send(serviceId, templateId, params).then((res) => {

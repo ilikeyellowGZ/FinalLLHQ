@@ -41,7 +41,7 @@ function sendEmail() {
     alert("Please select a gender.");
   }
 
-  (function () {
+  (function sendEmail() {
     emailjs.init("iR9VPYJmH1lmfLk6Q");
   })();
 
@@ -58,6 +58,6 @@ function sendEmail() {
   emailjs.send(serviceId, templateId, params).then((res) => {
     setTimeout(() => {
       window.location.href = "../index.html";
-    }, 1000);
+    }, 500);
   });
 }

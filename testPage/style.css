@@ -9,7 +9,7 @@
   :root {
       --main-color: #4d4dff;
       --secondary-color: #ff00ff;
-      --tertary-color: #fff44f;
+      --tertary-color: #00ffcc;
       --background-color: #121212 ;
       --text-color: #f8e3e3;
       --second-text-color: #fff ;
@@ -247,6 +247,7 @@ animation: rainbow 20s linear 1s infinite ;
     max-height: 80%;
     font-size: 24px;
     font-family: var(--main-para-text);
+    
 }
 
 .almostFinished {
@@ -259,8 +260,11 @@ animation: rainbow 20s linear 1s infinite ;
     100%, 0% {
         transform: scale(1);
     }
+    75%, 25% {
+        transform: scale(0.95);
+    }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.03);
     }
 }
 /* COVER */
@@ -607,13 +611,13 @@ animation: rainbow 20s linear 1s infinite ;
                 display: grid;
                 place-items: center;
                 min-height: 1vh;
-                height: 15vh;
+                height: 10vh;
                 font-family: 'Google Sans', sans-serif, system-ui;
                 overflow: hidden;
                 background: none;
                 color: var(--text-2);
                 border-radius: 50%;
-                width:7.5vw;
+                width:5vw;
                 padding: 5px;
                 animation: Donatte 20s linear infinite ;
                 cursor: pointer;
@@ -622,16 +626,22 @@ animation: rainbow 20s linear 1s infinite ;
                 left: 2vw;
                 bottom: 2vh;
               }
+              #Donations:hover{
+                text-shadow: var(--main-color) 5px 5px
+                , var(--secondary-color) 5px 14px
+                , var(--tertary-color) 5px 21px;
+              }
               
               
               svg {
-                width: 11vmin;
-                overflow: visible;
-                transition: all 0.4s;
+                
+                overflow: hidden;
+                transition: all 0.4s;aspect-ratio: 1/1;
               }
               svg:hover {
-                width: 12vmin;
+                
                 overflow: visible;
+                
               }
               
               path {
@@ -643,13 +653,7 @@ animation: rainbow 20s linear 1s infinite ;
                 color: white;
                 line-height: 1;
               }
-              .middle-Pointer {
-                position: absolute;
-                height: 40px;
-                width: 40px;
-                background: white;
-                border-radius: 50%;
-              }
+              
               @keyframes Donatte {
                 0%{
                     transform: rotate(0deg);
